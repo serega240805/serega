@@ -1,0 +1,124 @@
+@import "_nullstyle";
+@import "_varables";
+
+@import url("https://fonts.googleapis.com/css2?family=Paytone+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+
+html,
+body {
+    font-family: "Paytone One", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+}
+.wrapper {
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.container {
+    max-width: 1360px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/*------------------------------------*/
+
+.header {
+    background: rgba(13, 13, 14, 1) url(../images/header/1.jpg) top right no-repeat;
+    min-height: 760px;
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 0;
+        margin-bottom: 50px;
+    }
+
+    &__logo {
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        margin-right: 660px;
+    }
+
+    &__item {
+        margin-right: 36px;
+    }
+
+    &__link {
+        font-size: 18px;
+        letter-spacing: 1px;
+        line-height: 20px;
+        color: #ffffff;
+    }
+
+    &__btn {
+        font-family: "Paytone One";
+        font-size: 18px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 1px;
+        color: #ffffff;
+        background: #d400b3;
+        border: 2px solid #d400b3;
+        border-radius: 1px;
+        padding: 8px 35px;
+        white-space: nowrap;
+    }
+
+    &__bottom {
+    }
+
+    &__text {
+        font-size: 84px;
+        line-height: 100px;
+        letter-spacing: 1px;
+        color: #ffffff;
+        max-width: 660px;
+        margin-bottom: 22px;
+    }
+
+    &__subtitle {
+        font-size: 20px;
+        line-height: 32px;
+        color: #e5e5e5;
+        letter-spacing: 1px;
+        max-width: 640px;
+        margin-bottom: 130px;
+    }
+
+    &__video {
+        margin-left: -14px;
+        font-size: 32px;
+        line-height: 44px;
+        font-family: "Paytone One";
+        letter-spacing: 1px;
+        color: #ffffff;
+        background: #262627;
+        padding: 34px 200px;
+        position: relative;
+        z-index: 5;
+        &::after{
+            content: "";
+            position: absolute;
+            width: 62px;
+            height: 62px;
+            top: 0;
+            right: 0;
+            z-index: 10;
+            background-color: rgba(13, 13, 14, 1);
+        }
+        &::before{
+            content: "";
+            position: absolute;
+            background: url(../images/header/btn.svg) no-repeat;
+            width: 42px;
+            height: 42px;
+            right: 140px;
+            top: 38px;
+        }
+    }
+}

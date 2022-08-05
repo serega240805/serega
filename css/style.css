@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Paytone+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+* {
+  padding: 0s;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+html,
+body {
+  font-family: "Paytone One", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.wrapper {
+  min-height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1360px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/*------------------------------------*/
+.header {
+  background: rgb(13, 13, 14) url(../images/header/1.jpg) top right no-repeat;
+  min-height: 760px;
+}
+.header__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px 0;
+  margin-bottom: 50px;
+}
+.header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 660px;
+}
+.header__item {
+  margin-right: 36px;
+}
+.header__link {
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 20px;
+  color: #ffffff;
+}
+.header__btn {
+  font-family: "Paytone One";
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #ffffff;
+  background: #d400b3;
+  border: 2px solid #d400b3;
+  border-radius: 1px;
+  padding: 8px 35px;
+  white-space: nowrap;
+}
+.header__text {
+  font-size: 84px;
+  line-height: 100px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  max-width: 660px;
+  margin-bottom: 22px;
+}
+.header__subtitle {
+  font-size: 20px;
+  line-height: 32px;
+  color: #e5e5e5;
+  letter-spacing: 1px;
+  max-width: 640px;
+  margin-bottom: 130px;
+}
+.header__video {
+  margin-left: -14px;
+  font-size: 32px;
+  line-height: 44px;
+  font-family: "Paytone One";
+  letter-spacing: 1px;
+  color: #ffffff;
+  background: #262627;
+  padding: 34px 200px;
+  position: relative;
+  z-index: 5;
+}
+.header__video::after {
+  content: "";
+  position: absolute;
+  width: 62px;
+  height: 62px;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  background-color: rgb(13, 13, 14);
+}
+.header__video::before {
+  content: "";
+  position: absolute;
+  background: url(../images/header/btn.svg) no-repeat;
+  width: 42px;
+  height: 42px;
+  right: 140px;
+  top: 38px;
+}

@@ -21,6 +21,13 @@ body {
     padding: 0 15px;
     margin: 0 auto;
 }
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #666;
+    border-radius: 20px;
+}
 
 /*------------------------------------*/
 
@@ -101,17 +108,17 @@ body {
         padding: 34px 200px;
         position: relative;
         z-index: 5;
-        &::after{
+        &::after {
             content: "";
             position: absolute;
-            width: 62px;
-            height: 62px;
+            width: 46px;
+            height: 46px;
             top: 0;
             right: 0;
             z-index: 10;
             background-color: rgba(13, 13, 14, 1);
         }
-        &::before{
+        &::before {
             content: "";
             position: absolute;
             background: url(../images/header/btn.svg) no-repeat;
@@ -120,5 +127,84 @@ body {
             right: 140px;
             top: 38px;
         }
+    }
+}
+.main {
+    background-color: #262627;
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 160px 0;
+    }
+
+    &__text {
+        line-height: 32px;
+        letter-spacing: 1px;
+        color: #e5e5e5;
+        max-width: 400px;
+        margin-left: 30px;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        margin-right: 100px;
+    }
+
+    &__item {
+        margin-left: 30px;
+    }
+
+    &__title {
+        font-size: 56px;
+        line-height: 56px;
+        text-align: center;
+        letter-spacing: 1px;
+        font-weight: 800;
+    }
+
+    &__subtitle {
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 1px;
+    }
+
+    &__box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        animation: main__box 10s linear infinite;
+        margin-bottom: 20px;
+        max-width: 100%;
+    }
+    @keyframes main__box {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+    }
+
+    &__img {
+        max-width: 420px;
+        margin-right: 20px;
+    }
+
+    &__box2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        animation: main__box2 10s linear infinite;
+    }
+    @keyframes main__box2 {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(110%);
+    }
     }
 }

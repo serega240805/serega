@@ -87,7 +87,7 @@ body {
 }
 
 .container {
-  max-width: 1360px;
+  max-width: 1400px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -467,7 +467,6 @@ body {
           flex: 0 0 50%;
   background: #262627;
   min-height: 180px;
-  margin: 0px 0px 0px 0px;
 }
 .trending__1-box {
   margin: 60px 0px 0px 180px;
@@ -508,4 +507,83 @@ body {
   line-height: 64px;
   letter-spacing: 1px;
   text-align: center;
+}
+
+.artists {
+  background: #262627;
+  padding-top: 160px;
+  padding-bottom: 160px;
+}
+.artists__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.artists__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+.artists__box:nth-child(1)::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 150px;
+  left: 140px;
+  background: url(/images/artist/4.jpg);
+}
+.artists__box:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 150px;
+  left: 140px;
+  background: url(/images/artist/5.jpg);
+}
+.artists__box:nth-child(3)::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 150px;
+  left: 140px;
+  background: url(/images/artist/6.jpg);
+}
+.artists__img {
+  margin-bottom: 60px;
+}
+.artists__name {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.artists__btn {
+  background: #d400b3;
+  border: 2px solid #d400b3;
+  border-radius: 1px;
+  text-align: center;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px;
+  color: white;
 }

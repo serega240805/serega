@@ -17,7 +17,7 @@ body {
     overflow: hidden;
 }
 .container {
-    max-width: 1360px;
+    max-width: 1400px;
     padding: 0 15px;
     margin: 0 auto;
 }
@@ -355,7 +355,6 @@ body {
         flex: 0 0 50%;
         background: #262627;
         min-height: 180px;
-        margin: 0px 0px 0px 0px;
     }
 
     &__1-box {
@@ -402,19 +401,77 @@ body {
     }
 }
 .artists {
-
+    background: #262627;
+    padding-top: 160px;
+    padding-bottom: 160px;
     &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
     }
 
     &__box {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        &:nth-child(1) {
+            &::after {
+                content: "";
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                top: 150px;
+                left: 140px;
+                background: url(/images/artist/4.jpg);
+            }
+        }
+        &:nth-child(2) {
+            &::after {
+                content: "";
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                top: 150px;
+                left: 140px;
+                background: url(/images/artist/5.jpg);
+            }
+        }
+        &:nth-child(3) {
+            &::after {
+                content: "";
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                top: 150px;
+                left: 140px;
+                background: url(/images/artist/6.jpg);
+            }
+        }
     }
 
     &__img {
+        margin-bottom: 60px;
     }
 
     &__name {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 44px;
+        letter-spacing: 1px;
+        text-align: center;
+        margin-bottom: 30px;
     }
 
     &__btn {
+        background: #d400b3;
+        border: 2px solid #d400b3;
+        border-radius: 1px;
+        text-align: center;
+        letter-spacing: 1px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 20px;
+        color: white;
     }
 }

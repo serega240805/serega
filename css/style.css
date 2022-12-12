@@ -447,7 +447,7 @@ body {
   left: -3px;
   width: 18px;
   height: 18px;
-  background: url(/images/NFT/Frame.svg);
+  background: url(../images/NFT/Frame.svg);
 }
 .trending__artist {
   display: -webkit-box;
@@ -487,7 +487,7 @@ body {
   left: -3px;
   width: 18px;
   height: 18px;
-  background: url(/images/NFT/Frame.svg);
+  background: url(../images/NFT/Frame.svg);
 }
 .trending__sublink {
   font-size: 20px;
@@ -545,7 +545,7 @@ body {
   height: 100px;
   top: 150px;
   left: 140px;
-  background: url(/images/artist/4.jpg);
+  background: url(../images/artist/4.jpg);
 }
 .artists__box:nth-child(2)::after {
   content: "";
@@ -554,7 +554,7 @@ body {
   height: 100px;
   top: 150px;
   left: 140px;
-  background: url(/images/artist/5.jpg);
+  background: url(../images/artist/5.jpg);
 }
 .artists__box:nth-child(3)::after {
   content: "";
@@ -563,7 +563,7 @@ body {
   height: 100px;
   top: 150px;
   left: 140px;
-  background: url(/images/artist/6.jpg);
+  background: url(../images/artist/6.jpg);
 }
 .artists__img {
   margin-bottom: 60px;

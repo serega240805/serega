@@ -243,12 +243,12 @@ body {
 
     @keyframes scroll {
         from {
-          transform: translateX(0);
+            transform: translateX(0);
         }
         to {
-          transform: translateX(calc(-100% - 20px));
+            transform: translateX(calc(-100% - 20px));
         }
-      }
+    }
 }
 .trending {
     background: #0d0d0e;

@@ -200,6 +200,7 @@ body {
 
 .main {
   background-color: #262627;
+  padding-bottom: 40px;
 }
 .main__content {
   display: -webkit-box;

@@ -171,43 +171,84 @@ body {
         letter-spacing: 1px;
     }
 
-    &__box {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        animation: main__box 30s linear infinite;
-        margin-bottom: 20px;
-        max-width: 100%;
-    }
-    @keyframes main__box {
-        0% {
-            transform: translateX(0%);
-        }
-        100% {
-            transform: translateX(-100%);
-        }
-    }
-
     &__img {
         max-width: 420px;
         margin-right: 20px;
     }
 
-    &__box2 {
+    .wrap {
+        max-width: 600px;
+        margin: auto;
+        padding: 20px;
+    }
+    .items-wrap {
+        position: relative;
         display: flex;
+        overflow: hidden;
+        user-select: none;
+        gap: 20px;
+    }
+    .items-wrap:before,
+    .items-wrap:after {
+        content: "";
+        height: 100%;
+        top: 0;
+        width: 10%;
+        position: absolute;
+        z-index: 1;
+        pointer-events: none;
+    }
+    .items {
+        flex-shrink: 0;
+        display: flex;
+        gap: 20px;
+        counter-reset: item;
+        justify-content: space-around;
+        min-width: 100%;
+    }
+    .item {
+        background: #ccc;
+        flex: 0 0 auto;
+        width: 420px;
+        height: auto;
+        counter-increment: item;
+        border-radius: 6px;
+        display: flex;
+        justify-content: center;
         align-items: center;
-        justify-content: space-between;
-        animation: main__box2 60s linear infinite;
-        padding-bottom: 175px;
+        font-size: 25px;
+        font-weight: bold;
+        color: #fff;
+        margin: 10px 0;
+        transition: all 0.1s ease-in-out;
     }
-    @keyframes main__box2 {
-        0% {
-            transform: translateX(-100%);
-        }
-        100% {
-            transform: translateX(100%);
-        }
+    .item:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     }
+
+    .item:before {
+        content: counter(item);
+    }
+
+    .marquee {
+        animation: scroll 20s linear infinite;
+    }
+    .reverce {
+        animation-direction: reverse;
+    }
+    .items-wrap:hover .marquee {
+        animation-play-state: paused;
+    }
+
+    @keyframes scroll {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(calc(-100% - 20px));
+        }
+      }
 }
 .trending {
     background: #0d0d0e;
